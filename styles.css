@@ -303,13 +303,13 @@ img { display: block; max-width: 100%; }
   grid-template-columns: 1fr 1fr;
 }
 .manifesto-mark { position: relative; overflow: hidden; border-right: 1px solid rgba(244,243,239,0.24); background: #000; }
-.manifesto-mark img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: screen; transform: scale(1.15); }
+.manifesto-mark img { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: screen; }
 .manifesto-copy { padding: clamp(4rem, 8vw, 8.7rem) 9% clamp(3.5rem, 8vw, 8.7rem); display: flex; flex-direction: column; align-items: flex-start; }
 .manifesto h2 { margin-top: clamp(4rem, 11vw, 10rem); font-size: clamp(2.6rem, 4.6vw, 5.4rem); }
 .manifesto-text { max-width: 23rem; margin: auto 0 2.2rem; font-size: 0.96rem; line-height: 1.48; letter-spacing: -0.025em; color: rgba(244,243,239,0.78); }
 
 .contact-strip { padding: clamp(5rem, 12vw, 12rem) 3.5vw; display: flex; flex-direction: column; gap: 1.15rem; }
-.contact-mail { width: fit-content; font-size: clamp(2rem, 5.8vw, 7.15rem); font-weight: 700; letter-spacing: -0.085em; line-height: 0.96; border-bottom: 3px solid var(--ink); transition: letter-spacing 300ms ease; }
+.contact-mail { max-width: 100%; width: fit-content; font-size: clamp(2rem, 5vw, 6.3rem); font-weight: 700; letter-spacing: -0.085em; line-height: 0.96; border-bottom: 3px solid var(--ink); transition: letter-spacing 300ms ease; }
 .contact-mail:hover { letter-spacing: -0.06em; }
 .contact-mail span { font-size: 0.65em; vertical-align: 0.15em; }
 
@@ -359,7 +359,6 @@ img { display: block; max-width: 100%; }
 
   .manifesto { display: flex; flex-direction: column; min-height: auto; }
   .manifesto-mark { height: 66vw; border: 0; border-bottom: 1px solid rgba(244,243,239,0.24); }
-  .manifesto-mark img { transform: scale(1.45); }
   .manifesto-copy { padding: 3.8rem 1.2rem 4rem; min-height: 510px; }
   .manifesto h2 { margin-top: 4.5rem; font-size: clamp(2.75rem, 12.7vw, 4.2rem); }
   .manifesto-text { margin-top: auto; margin-bottom: 1.8rem; }
