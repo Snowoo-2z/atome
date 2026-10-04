@@ -4,7 +4,7 @@
   "private": true,
   "description": "Landing page for Atome",
   "scripts": {
-    "dev": "python3 -m http.server 4173 --bind 0.0.0.0",
-    "start": "python3 -m http.server 4173 --bind 0.0.0.0"
+    "dev": "node server.js",
+    "start": "node server.js"
   }
 }
