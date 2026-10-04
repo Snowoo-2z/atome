@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="preload" as="image" href="./vetement%20realiste%20sans%20humain.png" />
     <link rel="preload" as="image" href="./vetement%20humain%20hiver.png" />
-    <link rel="stylesheet" href="./styles.css?v=20261004-3" />
+    <link rel="stylesheet" href="./styles.css?v=20261004-5" />
   </head>
   <body>
     <div class="site-shell">
@@ -19,7 +19,7 @@
         </a>
 
         <nav class="main-nav" aria-label="Navigation principale">
-          <a href="#shop">Shop</a>
+          <a href="./shop/">Shop</a>
           <a href="#contact">Contact</a>
         </nav>
 
@@ -38,7 +38,7 @@
               <span class="hero-line">YOUR</span>
               <span class="hero-line"><em>ENERGY.</em></span>
             </h1>
-            <a class="text-link link-arrow" href="#shop">Découvrir la collection <span aria-hidden="true">↘</span></a>
+            <a class="text-link link-arrow" href="./shop/">Découvrir la collection <span aria-hidden="true">↘</span></a>
           </div>
 
           <div class="hero-image reveal reveal-delay">
@@ -60,13 +60,25 @@
             <h2 id="product-title">Atome<br /><span>- Hiver</span></h2>
           </div>
 
-          <div class="product-visual reveal" data-product-visual tabindex="0" role="button" aria-label="Voir l'ensemble Atome porté">
+          <div class="product-visual reveal" data-product-visual tabindex="0" role="button" aria-pressed="false" aria-label="Voir l'ensemble Atome porté">
             <img class="product-image product-flat" src="./vetement%20realiste%20sans%20humain.png" alt="L'ensemble Atome, avec hoodie et pantalon, présenté à plat" />
             <img class="product-image product-worn" src="./vetement%20humain%20hiver.png" alt="L'ensemble Atome porté, vu de face et de dos" />
           </div>
 
           <div class="product-info reveal">
-            <a class="solid-link" href="#contact">Découvrir <span aria-hidden="true">↗</span></a>
+            <a class="solid-link" href="./shop/#hiver">Découvrir <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+
+        <section class="bonnet-promo" aria-labelledby="bonnet-title">
+          <div class="bonnet-visual product-visual reveal" data-product-visual tabindex="0" role="button" aria-pressed="false" aria-label="Voir le bonnet Atome porté">
+            <img class="product-image product-flat" src="./bonnet%20r%C3%A9aliste.png" alt="Le bonnet Atome présenté à plat" />
+            <img class="product-image product-worn" src="./Bonnet%20sur%20humain.png" alt="Le bonnet Atome porté" />
+          </div>
+          <div class="bonnet-copy reveal reveal-delay">
+            <p class="eyebrow">Nouveau</p>
+            <h2 id="bonnet-title">Atome<br /><span>- Bonnet</span></h2>
+            <a class="text-link link-arrow" href="./shop/#bonnet">Voir la collection <span aria-hidden="true">↘</span></a>
           </div>
         </section>
 
@@ -88,6 +100,6 @@
         </div>
       </footer>
     </div>
-    <script src="./script.js?v=20261004"></script>
+    <script src="./script.js?v=20261004-3"></script>
   </body>
 </html>

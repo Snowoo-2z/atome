@@ -38,6 +38,11 @@ function getRequestedFile(requestUrl) {
     return null;
   }
 
+  const relativePath = path.relative(ROOT_DIR, filePath);
+  if (relativePath.split(path.sep).some((segment) => segment.startsWith('.'))) {
+    return null;
+  }
+
   return filePath;
 }
 
@@ -66,7 +71,16 @@ const server = http.createServer(async (request, response) => {
   }
 
   try {
-    const fileStats = await stat(filePath);
+    let fileStats = await stat(filePath);
+    if (fileStats.isDirectory()) {
+      filePath = path.join(filePath, 'index.html');
+      if (!existsSync(filePath)) {
+        sendJson(response, 404, { error: 'Not found' });
+        return;
+      }
+      fileStats = await stat(filePath);
+    }
+
     if (!fileStats.isFile()) {
       sendJson(response, 404, { error: 'Not found' });
       return;

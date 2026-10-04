@@ -1,26 +1,25 @@
-const productVisual = document.querySelector('[data-product-visual]');
+const productVisuals = document.querySelectorAll('[data-product-visual]');
+
+function toggleProductVisual(productVisual) {
+  const isActive = productVisual.classList.toggle('is-active');
+  productVisual.setAttribute('aria-pressed', String(isActive));
+}
 
 // On touch screens, a tap lets visitors reveal the worn version without relying on hover.
-if (productVisual) {
+productVisuals.forEach((productVisual) => {
   productVisual.addEventListener('click', () => {
     if (window.matchMedia('(hover: none)').matches) {
-      productVisual.classList.toggle('is-active');
-      productVisual.setAttribute(
-        'aria-label',
-        productVisual.classList.contains('is-active')
-          ? 'Voir l’ensemble Atome présenté à plat'
-          : 'Voir l’ensemble Atome porté'
-      );
+      toggleProductVisual(productVisual);
     }
   });
 
   productVisual.addEventListener('keydown', (event) => {
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
-      productVisual.classList.toggle('is-active');
+      toggleProductVisual(productVisual);
     }
   });
-}
+});
 
 const revealElements = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver(
@@ -37,4 +36,7 @@ const revealObserver = new IntersectionObserver(
 
 revealElements.forEach((element) => revealObserver.observe(element));
 
-document.querySelector('#year').textContent = new Date().getFullYear();
+const year = document.querySelector('#year');
+if (year) {
+  year.textContent = new Date().getFullYear();
+}

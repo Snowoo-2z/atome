@@ -292,6 +292,30 @@ img { display: block; max-width: 100%; }
 .solid-link:hover { color: var(--ink); background: transparent; }
 .solid-link:hover span { transform: translate(2px, -2px); }
 
+.bonnet-promo {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #e8e8e5;
+}
+.bonnet-visual { background: #f2f2f0; }
+.bonnet-copy {
+  padding: clamp(3rem, 7vw, 7.5rem) 11%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.bonnet-copy h2 {
+  margin: auto 0;
+  font-size: clamp(2.55rem, 4.2vw, 5.2rem);
+  font-weight: 800;
+  letter-spacing: -0.09em;
+  line-height: 0.79;
+}
+.bonnet-copy h2 span { font-family: var(--serif); font-style: italic; font-weight: 500; }
+
 .contact-strip { padding: clamp(5rem, 12vw, 12rem) 3.5vw; display: flex; flex-direction: column; gap: 1.15rem; }
 .contact-mail { max-width: 100%; width: fit-content; font-size: clamp(1.8rem, 4.2vw, 5rem); font-weight: 700; letter-spacing: -0.085em; line-height: 0.96; border-bottom: 3px solid var(--ink); transition: letter-spacing 300ms ease; }
 .contact-mail:hover { letter-spacing: -0.06em; }
@@ -336,6 +360,10 @@ img { display: block; max-width: 100%; }
   .product-heading { margin-bottom: 2.3rem; }
   .product-heading h2 { font-size: clamp(2.6rem, 12vw, 3.7rem); }
   .product-info { max-width: none; margin-top: 1rem; }
+
+  .bonnet-promo { display: block; }
+  .bonnet-copy { min-height: 320px; padding: 3rem 1.2rem; }
+  .bonnet-copy h2 { font-size: clamp(2.65rem, 11vw, 3.55rem); }
 
   .contact-strip { padding: 5.3rem 1.2rem; }
   .contact-mail { font-size: clamp(1.55rem, 7.2vw, 2.5rem); border-bottom-width: 2px; }

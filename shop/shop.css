@@ -1,0 +1,106 @@
+.catalog-back {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 6px 0;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.catalog-back span { font-size: 0.9rem; transition: transform 220ms ease; }
+.catalog-back:hover span { transform: translate(-2px, -2px); }
+
+.catalog-intro {
+  min-height: min(520px, 48vw);
+  padding: clamp(4rem, 8.5vw, 9rem) 3.5vw 3.5rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--line);
+}
+.catalog-intro h1 {
+  margin: auto 0 0;
+  font-size: clamp(3.35rem, 7.5vw, 7.5rem);
+  font-weight: 800;
+  letter-spacing: -0.1em;
+  line-height: 0.75;
+}
+.catalog-intro h1 em {
+  font-family: var(--serif);
+  font-weight: 500;
+  letter-spacing: -0.09em;
+}
+.catalog-intro-note {
+  margin: 2.5rem 0 0;
+  font-size: 0.9rem;
+  letter-spacing: -0.025em;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.catalog-item { min-width: 0; }
+.catalog-item + .catalog-item { border-left: 1px solid var(--line); }
+.catalog-visual { background: #e9e8e5; }
+.catalog-item-info {
+  min-height: 112px;
+  padding: 1rem 1.25rem 1.35rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border-top: 1px solid var(--line);
+}
+.catalog-item-info h2 {
+  margin: 0.55rem 0 0;
+  font-size: clamp(1.4rem, 2.2vw, 2.35rem);
+  font-weight: 600;
+  letter-spacing: -0.065em;
+  line-height: 1;
+}
+.catalog-status {
+  padding-bottom: 0.12rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.catalog-discord {
+  min-height: 330px;
+  padding: clamp(4rem, 8vw, 8rem) 3.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: var(--night);
+  color: var(--paper);
+}
+.catalog-discord > a {
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid currentColor;
+  font-size: clamp(1.9rem, 4.4vw, 4.9rem);
+  font-weight: 700;
+  letter-spacing: -0.08em;
+  line-height: 0.95;
+  transition: letter-spacing 240ms ease;
+}
+.catalog-discord > a:hover { letter-spacing: -0.055em; }
+.catalog-discord > a span { font-size: 0.62em; vertical-align: 0.14em; }
+
+@media (max-width: 680px) {
+  .catalog-back { font-size: 0.6rem; }
+  .catalog-intro { min-height: 365px; padding: 3rem 1.2rem 2.3rem; }
+  .catalog-intro h1 { font-size: clamp(3.7rem, 17vw, 5.8rem); }
+  .catalog-intro-note { margin-top: 1.8rem; }
+
+  .catalog-grid { display: block; }
+  .catalog-item + .catalog-item { border-top: 1px solid var(--line); border-left: 0; }
+  .catalog-item-info { min-height: 94px; padding: 0.9rem 1.2rem 1.1rem; }
+  .catalog-item-info h2 { font-size: 1.55rem; }
+
+  .catalog-discord { min-height: 255px; padding: 3.2rem 1.2rem; }
+  .catalog-discord > a { font-size: clamp(1.85rem, 9.2vw, 3.2rem); }
+}
