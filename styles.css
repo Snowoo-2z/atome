@@ -230,6 +230,9 @@ img { display: block; max-width: 100%; }
   outline: none;
 }
 
+.product-visual,
+.product-visual * { cursor: default !important; }
+
 .product-image {
   position: absolute;
   inset: 0;
