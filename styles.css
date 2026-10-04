@@ -145,21 +145,19 @@ img { display: block; max-width: 100%; }
 }
 
 .hero h1,
-.product-heading h2,
-.manifesto h2 {
+.product-heading h2 {
   margin: 0;
   font-weight: 800;
   letter-spacing: -0.09em;
   line-height: 0.79;
 }
 
-.hero h1 { font-size: clamp(4rem, 8.2vw, 9.25rem); }
+.hero h1 { font-size: clamp(3.25rem, 6.8vw, 7.5rem); }
 .hero-line { display: block; opacity: 0; transform: translateY(0.7em); }
 .hero-copy.in-view .hero-line { animation: hero-line-in 760ms cubic-bezier(.22,.61,.36,1) forwards; }
 .hero-copy.in-view .hero-line:nth-child(2) { animation-delay: 110ms; }
 .hero-copy.in-view .hero-line:nth-child(3) { animation-delay: 220ms; }
-.hero h1 em,
-.manifesto h2 em { font-family: var(--serif); font-weight: 500; letter-spacing: -0.08em; }
+.hero h1 em { font-family: var(--serif); font-weight: 500; letter-spacing: -0.08em; }
 
 @keyframes hero-line-in {
   from { opacity: 0; transform: translateY(0.7em); }
@@ -238,7 +236,7 @@ img { display: block; max-width: 100%; }
 }
 
 .product-heading { padding-top: 0.2rem; }
-.product-heading h2 { margin-top: 1.25rem; font-size: clamp(2.8rem, 4.4vw, 5.15rem); }
+.product-heading h2 { margin-top: 1.25rem; font-size: clamp(2.45rem, 3.8vw, 4.45rem); }
 .product-heading h2 span { font-family: var(--serif); font-style: italic; font-weight: 500; }
 
 .product-visual {
@@ -294,27 +292,14 @@ img { display: block; max-width: 100%; }
 .solid-link:hover { color: var(--ink); background: transparent; }
 .solid-link:hover span { transform: translate(2px, -2px); }
 
-.manifesto {
-  background: var(--night);
-  color: var(--paper);
-  min-height: min(780px, 70vw);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.manifesto-mark { position: relative; overflow: hidden; border-right: 1px solid rgba(244,243,239,0.24); background: #000; }
-.manifesto-mark img { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: screen; }
-.manifesto-copy { padding: clamp(4rem, 8vw, 8.7rem) 9% clamp(3.5rem, 8vw, 8.7rem); display: flex; flex-direction: column; align-items: flex-start; }
-.manifesto h2 { margin-top: clamp(4rem, 11vw, 10rem); font-size: clamp(2.6rem, 4.6vw, 5.4rem); }
-.manifesto-text { max-width: 23rem; margin: auto 0 2.2rem; font-size: 0.96rem; line-height: 1.48; letter-spacing: -0.025em; color: rgba(244,243,239,0.78); }
-
 .contact-strip { padding: clamp(5rem, 12vw, 12rem) 3.5vw; display: flex; flex-direction: column; gap: 1.15rem; }
-.contact-mail { max-width: 100%; width: fit-content; font-size: clamp(2rem, 5vw, 6.3rem); font-weight: 700; letter-spacing: -0.085em; line-height: 0.96; border-bottom: 3px solid var(--ink); transition: letter-spacing 300ms ease; }
+.contact-mail { max-width: 100%; width: fit-content; font-size: clamp(1.8rem, 4.2vw, 5rem); font-weight: 700; letter-spacing: -0.085em; line-height: 0.96; border-bottom: 3px solid var(--ink); transition: letter-spacing 300ms ease; }
 .contact-mail:hover { letter-spacing: -0.06em; }
 .contact-mail span { font-size: 0.65em; vertical-align: 0.15em; }
 
 .site-footer { background: var(--night); color: var(--paper); padding: 2.1rem 3.5vw 1.65rem; }
 .footer-top { display: flex; align-items: end; justify-content: space-between; padding-bottom: 5rem; }
-.footer-wordmark { font-size: clamp(3.5rem, 9vw, 10rem); letter-spacing: -0.12em; }
+.footer-wordmark { font-size: clamp(3rem, 7.2vw, 8rem); letter-spacing: -0.12em; }
 .footer-top p { margin: 0; color: rgba(244,243,239,0.56); font-family: var(--mono); font-size: 0.61rem; }
 .footer-links { border-top: 1px solid rgba(244,243,239,0.3); padding-top: 0.95rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .footer-links a { position: relative; width: fit-content; padding-bottom: 4px; color: rgba(244,243,239,0.86); }
@@ -327,8 +312,6 @@ img { display: block; max-width: 100%; }
 @media (max-width: 900px) {
   .product-section { grid-template-columns: minmax(140px, 0.38fr) 1fr; }
   .product-info { grid-column: 2; max-width: 380px; }
-  .manifesto { min-height: 620px; }
-  .manifesto-copy { padding-left: 8%; padding-right: 8%; }
 }
 
 @media (max-width: 680px) {
@@ -339,7 +322,7 @@ img { display: block; max-width: 100%; }
 
   .hero { display: flex; flex-direction: column; min-height: auto; }
   .hero-copy { min-height: 360px; padding: 2.4rem 1.2rem 2.1rem; order: 2; }
-  .hero h1 { margin-top: 2.6rem; font-size: clamp(4.1rem, 19vw, 6rem); }
+  .hero h1 { margin-top: 2.6rem; font-size: clamp(3.15rem, 15vw, 4.8rem); }
   .hero-copy .text-link { margin-top: 3rem; }
   .hero-image { order: 1; min-height: 0; height: min(118vw, 580px); }
   .hero-image img { object-position: center center; }
@@ -351,22 +334,14 @@ img { display: block; max-width: 100%; }
 
   .product-section { padding: 4.8rem 1.2rem 5.4rem; display: block; }
   .product-heading { margin-bottom: 2.3rem; }
-  .product-heading h2 { font-size: clamp(3.2rem, 14.2vw, 4.4rem); }
+  .product-heading h2 { font-size: clamp(2.6rem, 12vw, 3.7rem); }
   .product-info { max-width: none; margin-top: 1rem; }
-  .product-description { margin: 1.25rem 0 1.7rem; max-width: 21rem; }
-  .product-hover-note { bottom: 0.85rem; left: 0.85rem; }
-
-  .manifesto { display: flex; flex-direction: column; min-height: auto; }
-  .manifesto-mark { height: 66vw; border: 0; border-bottom: 1px solid rgba(244,243,239,0.24); }
-  .manifesto-copy { padding: 3.8rem 1.2rem 4rem; min-height: 510px; }
-  .manifesto h2 { margin-top: 4.5rem; font-size: clamp(2.75rem, 12.7vw, 4.2rem); }
-  .manifesto-text { margin-top: auto; margin-bottom: 1.8rem; }
 
   .contact-strip { padding: 5.3rem 1.2rem; }
-  .contact-mail { font-size: clamp(1.7rem, 8.7vw, 3rem); border-bottom-width: 2px; }
+  .contact-mail { font-size: clamp(1.55rem, 7.2vw, 2.5rem); border-bottom-width: 2px; }
   .site-footer { padding: 1.5rem 1.2rem 1.25rem; }
   .footer-top { padding-bottom: 3.6rem; align-items: start; flex-direction: column; gap: 1.5rem; }
-  .footer-wordmark { font-size: 5.2rem; }
+  .footer-wordmark { font-size: 4.2rem; }
   .footer-links { grid-template-columns: 1fr 1fr; row-gap: 1.1rem; }
 }
 
