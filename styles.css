@@ -203,8 +203,8 @@ img { display: block; max-width: 100%; }
   justify-content: space-between;
   align-items: end;
 }
-.discord-callout { margin: 0; font-size: clamp(1.2rem, 1.8vw, 1.8rem); font-weight: 500; letter-spacing: -0.065em; line-height: 1.02; border-bottom: 1px solid transparent; transition: border-color 220ms ease; }
-.discord-callout:hover { border-color: currentColor; }
+.discord-callout { margin: 0; display: inline-flex; align-items: center; gap: 0.4rem; width: fit-content; font-size: clamp(1.2rem, 1.8vw, 1.8rem); font-weight: 500; letter-spacing: -0.065em; line-height: 1.02; border-bottom: 1px solid transparent; transition: border-color 220ms ease, transform 220ms ease; }
+.discord-callout:hover { border-color: currentColor; transform: translateX(4px); }
 .discord-callout span { display: inline-block; font-size: 0.78em; transition: transform 220ms ease; }
 .discord-callout:hover span { transform: translate(2px, -2px); }
 .intro-line > span { color: var(--muted); font-family: var(--mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; }
