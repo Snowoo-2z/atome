@@ -13,14 +13,11 @@
 .catalog-back:hover span { transform: translate(-2px, -2px); }
 
 .catalog-intro {
-  min-height: min(520px, 48vw);
-  padding: clamp(4rem, 8.5vw, 9rem) 3.5vw 3.5rem;
-  display: flex;
-  flex-direction: column;
+  padding: clamp(2.5rem, 5vw, 5rem) 3.5vw 3rem;
   border-bottom: 1px solid var(--line);
 }
 .catalog-intro h1 {
-  margin: auto 0 0;
+  margin: 0;
   font-size: clamp(3.35rem, 7.5vw, 7.5rem);
   font-weight: 800;
   letter-spacing: -0.1em;
@@ -112,7 +109,7 @@
 
 @media (max-width: 680px) {
   .catalog-back { font-size: 0.6rem; }
-  .catalog-intro { min-height: 365px; padding: 3rem 1.2rem 2.3rem; }
+  .catalog-intro { padding: 2.5rem 1.2rem 2.4rem; }
   .catalog-intro h1 { font-size: clamp(3.7rem, 17vw, 5.8rem); }
 
   .catalog-grid { display: block; }
