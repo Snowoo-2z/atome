@@ -66,6 +66,28 @@
   text-transform: uppercase;
 }
 
+.catalog-item--summer {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 0 !important;
+}
+.catalog-item--summer .catalog-item-info {
+  min-height: auto;
+  padding: clamp(3rem, 7vw, 7.5rem) 11%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-top: 0;
+  border-left: 1px solid var(--line);
+}
+.catalog-item--summer .catalog-item-info h2 {
+  max-width: 25rem;
+  font-size: clamp(2rem, 4.2vw, 5rem);
+  line-height: 0.9;
+}
+
 .catalog-discord {
   min-height: 330px;
   padding: clamp(4rem, 8vw, 8rem) 3.5vw;
@@ -97,6 +119,16 @@
   .catalog-item + .catalog-item { border-top: 1px solid var(--line); border-left: 0; }
   .catalog-item-info { min-height: 94px; padding: 0.9rem 1.2rem 1.1rem; }
   .catalog-item-info h2 { font-size: 1.55rem; }
+  .catalog-item--summer { display: block; }
+  .catalog-item--summer .catalog-item-info {
+    min-height: 94px;
+    padding: 0.9rem 1.2rem 1.1rem;
+    flex-direction: row;
+    align-items: end;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+  .catalog-item--summer .catalog-item-info h2 { font-size: 1.55rem; line-height: 1; }
 
   .catalog-discord { min-height: 255px; padding: 3.2rem 1.2rem; }
   .catalog-discord > a { font-size: clamp(1.85rem, 9.2vw, 3.2rem); }
