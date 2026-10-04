@@ -194,8 +194,7 @@ img { display: block; max-width: 100%; }
 
 .hero-image {
   position: relative;
-  min-height: 0;
-  margin: clamp(1.5rem, 3vw, 3.25rem) clamp(1.5rem, 3vw, 3.25rem) clamp(1.5rem, 3vw, 3.25rem) 0;
+  min-height: 620px;
   overflow: hidden;
   background: #88847d;
 }
@@ -280,7 +279,12 @@ img { display: block; max-width: 100%; }
 .product-visual.is-active .product-flat,
 .product-visual:focus-visible .product-flat { transform: scale(1.012); }
 
-.product-info { align-self: end; padding-bottom: 0.25rem; }
+.product-info {
+  grid-column: 2;
+  width: 90%;
+  justify-self: center;
+  margin-top: 0.9rem;
+}
 
 .solid-link {
   width: 100%;
@@ -363,7 +367,7 @@ img { display: block; max-width: 100%; }
   .hero-copy { min-height: 360px; padding: 2.4rem 1.2rem 2.1rem; order: 2; }
   .hero h1 { margin-top: 2.6rem; font-size: clamp(3.15rem, 15vw, 4.8rem); }
   .hero-copy .text-link { margin-top: 3rem; }
-  .hero-image { order: 1; min-height: 0; height: min(106vw, 520px); margin: 1.2rem 1.2rem 0; }
+  .hero-image { order: 1; min-height: 0; height: min(118vw, 580px); }
   .hero-image img { object-position: center center; }
   .image-caption { left: 1rem; bottom: 1rem; }
   .hero-index { display: none; }
@@ -375,7 +379,7 @@ img { display: block; max-width: 100%; }
   .product-section > .product-visual { margin: 0 auto; }
   .product-heading { margin-bottom: 2.3rem; }
   .product-heading h2 { font-size: clamp(2.6rem, 12vw, 3.7rem); }
-  .product-info { max-width: none; margin-top: 1rem; }
+  .product-info { width: 90%; max-width: none; margin: 1rem auto 0; }
 
   .bonnet-promo { display: block; }
   .bonnet-visual { margin: 1.2rem auto 0; }
