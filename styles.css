@@ -199,26 +199,6 @@ img { display: block; max-width: 100%; }
   background: #88847d;
 }
 .hero-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.image-caption {
-  position: absolute;
-  bottom: 1.65rem;
-  left: 1.65rem;
-  color: #f6f4ef;
-  font-family: var(--mono);
-  font-size: 0.62rem;
-  letter-spacing: 0.09em;
-}
-
-.hero-index {
-  position: absolute;
-  right: 3.5vw;
-  bottom: 1.75rem;
-  margin: 0;
-  font-family: var(--mono);
-  font-size: 0.62rem;
-  color: #f6f4ef;
-}
-
 .intro-line {
   padding: 1.65rem 3.5vw 1.85rem;
   border-bottom: 1px solid var(--line);
@@ -369,9 +349,6 @@ img { display: block; max-width: 100%; }
   .hero-copy .text-link { margin-top: 3rem; }
   .hero-image { order: 1; min-height: 0; height: min(118vw, 580px); }
   .hero-image img { object-position: center center; }
-  .image-caption { left: 1rem; bottom: 1rem; }
-  .hero-index { display: none; }
-
   .intro-line { padding: 1.1rem 1.2rem 1.25rem; }
   .intro-line > span { display: none; }
 
