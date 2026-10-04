@@ -30,16 +30,7 @@ a { color: inherit; text-decoration: none; }
 button { color: inherit; font: inherit; }
 img { display: block; max-width: 100%; }
 
-.site-shell {
-  width: 111.111111%;
-  overflow: clip;
-  zoom: 0.9;
-}
-
-@supports not (zoom: 1) {
-  html { font-size: 90%; }
-  .site-shell { width: 100%; }
-}
+.site-shell { overflow: clip; }
 
 .site-header {
   display: grid;
@@ -201,7 +192,13 @@ img { display: block; max-width: 100%; }
 .link-arrow span { font-size: 1.1rem; line-height: 0; transition: transform 240ms ease; }
 .link-arrow:hover span { transform: translate(3px, 3px); }
 
-.hero-image { position: relative; min-height: 620px; overflow: hidden; background: #88847d; }
+.hero-image {
+  position: relative;
+  min-height: 0;
+  margin: clamp(1.5rem, 3vw, 3.25rem) clamp(1.5rem, 3vw, 3.25rem) clamp(1.5rem, 3vw, 3.25rem) 0;
+  overflow: hidden;
+  background: #88847d;
+}
 .hero-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .image-caption {
   position: absolute;
@@ -256,6 +253,10 @@ img { display: block; max-width: 100%; }
   cursor: default;
   outline: none;
 }
+.product-section > .product-visual {
+  width: 90%;
+  justify-self: center;
+}
 
 .product-visual,
 .product-visual * { cursor: default !important; }
@@ -308,7 +309,12 @@ img { display: block; max-width: 100%; }
   border-bottom: 1px solid var(--line);
   background: #e8e8e5;
 }
-.bonnet-visual { background: #f2f2f0; }
+.bonnet-visual {
+  width: 90%;
+  justify-self: center;
+  align-self: center;
+  background: #f2f2f0;
+}
 .bonnet-copy {
   padding: clamp(3rem, 7vw, 7.5rem) 11%;
   display: flex;
@@ -357,7 +363,7 @@ img { display: block; max-width: 100%; }
   .hero-copy { min-height: 360px; padding: 2.4rem 1.2rem 2.1rem; order: 2; }
   .hero h1 { margin-top: 2.6rem; font-size: clamp(3.15rem, 15vw, 4.8rem); }
   .hero-copy .text-link { margin-top: 3rem; }
-  .hero-image { order: 1; min-height: 0; height: min(118vw, 580px); }
+  .hero-image { order: 1; min-height: 0; height: min(106vw, 520px); margin: 1.2rem 1.2rem 0; }
   .hero-image img { object-position: center center; }
   .image-caption { left: 1rem; bottom: 1rem; }
   .hero-index { display: none; }
@@ -366,11 +372,13 @@ img { display: block; max-width: 100%; }
   .intro-line > span { display: none; }
 
   .product-section { padding: 4.8rem 1.2rem 5.4rem; display: block; }
+  .product-section > .product-visual { margin: 0 auto; }
   .product-heading { margin-bottom: 2.3rem; }
   .product-heading h2 { font-size: clamp(2.6rem, 12vw, 3.7rem); }
   .product-info { max-width: none; margin-top: 1rem; }
 
   .bonnet-promo { display: block; }
+  .bonnet-visual { margin: 1.2rem auto 0; }
   .bonnet-copy { min-height: 320px; padding: 3rem 1.2rem; }
   .bonnet-copy h2 { font-size: clamp(2.65rem, 11vw, 3.55rem); }
 

@@ -37,7 +37,11 @@
 }
 .catalog-item { min-width: 0; }
 .catalog-item + .catalog-item { border-left: 1px solid var(--line); }
-.catalog-visual { background: #e9e8e5; }
+.catalog-visual {
+  width: 90%;
+  margin: 5% auto;
+  background: #e9e8e5;
+}
 .catalog-item-info {
   min-height: 112px;
   padding: 1rem 1.25rem 1.35rem;
