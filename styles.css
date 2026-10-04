@@ -248,18 +248,18 @@ img { display: block; max-width: 100%; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: opacity 430ms cubic-bezier(.22,.61,.36,1), transform 650ms cubic-bezier(.22,.61,.36,1), filter 430ms ease;
+  transition: opacity 700ms cubic-bezier(.22,.61,.36,1), transform 900ms cubic-bezier(.22,.61,.36,1);
   will-change: opacity, transform;
 }
-.product-worn { opacity: 0; transform: scale(1.025); }
+.product-worn { opacity: 0; transform: scale(1.01); }
 .product-flat { opacity: 1; }
 
 .product-visual:hover .product-worn,
 .product-visual.is-active .product-worn,
-.product-visual:focus-visible .product-worn { opacity: 1; transform: scale(1.01); }
+.product-visual:focus-visible .product-worn { opacity: 1; transform: scale(1.005); }
 .product-visual:hover .product-flat,
 .product-visual.is-active .product-flat,
-.product-visual:focus-visible .product-flat { transform: scale(1.03); filter: brightness(0.94); }
+.product-visual:focus-visible .product-flat { transform: scale(1.012); }
 
 .product-info { align-self: end; padding-bottom: 0.25rem; }
 
