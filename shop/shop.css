@@ -31,12 +31,6 @@
   font-weight: 500;
   letter-spacing: -0.09em;
 }
-.catalog-intro-note {
-  margin: 2.5rem 0 0;
-  font-size: 0.9rem;
-  letter-spacing: -0.025em;
-}
-
 .catalog-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -53,7 +47,7 @@
   border-top: 1px solid var(--line);
 }
 .catalog-item-info h2 {
-  margin: 0.55rem 0 0;
+  margin: 0;
   font-size: clamp(1.4rem, 2.2vw, 2.35rem);
   font-weight: 600;
   letter-spacing: -0.065em;
@@ -94,7 +88,6 @@
   .catalog-back { font-size: 0.6rem; }
   .catalog-intro { min-height: 365px; padding: 3rem 1.2rem 2.3rem; }
   .catalog-intro h1 { font-size: clamp(3.7rem, 17vw, 5.8rem); }
-  .catalog-intro-note { margin-top: 1.8rem; }
 
   .catalog-grid { display: block; }
   .catalog-item + .catalog-item { border-top: 1px solid var(--line); border-left: 0; }
