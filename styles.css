@@ -53,13 +53,13 @@ img { display: block; max-width: 100%; }
 
 .brand-logo {
   display: block;
-  width: 112px;
+  width: 108px;
 }
 
 .brand-logo img {
+  display: block;
   width: 100%;
   height: auto;
-  filter: brightness(0);
 }
 
 .main-nav { display: flex; align-items: center; gap: clamp(1.15rem, 2.2vw, 2.75rem); }
