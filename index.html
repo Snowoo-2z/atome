@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Atome — wear your energy." />
+    <title>ATOME — Wear your energy</title>
+    <link rel="preload" as="image" href="./vetement%20realiste%20sans%20humain.png" />
+    <link rel="preload" as="image" href="./vetement%20humain%20hiver.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" id="top">
+        <a class="wordmark" href="#top" aria-label="Atome, retour en haut">ATOME</a>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="#shop">Shop</a>
+          <a href="#about">À propos</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="bag-button" type="button" aria-label="Panier vide">
+          <span>Panier</span>
+          <span class="bag-icon" aria-hidden="true"></span>
+        </button>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Collection 001 — Disponible bientôt</p>
+            <h1 id="hero-title">WEAR<br />YOUR<br /><em>ENERGY.</em></h1>
+            <a class="text-link link-arrow" href="#shop">Découvrir la collection <span aria-hidden="true">↘</span></a>
+          </div>
+
+          <div class="hero-image reveal reveal-delay">
+            <img src="./vetement%20humain%20hiver.png" alt="L'ensemble Atome porté, vu de face et de dos" />
+            <span class="image-caption">ATOME / 001</span>
+          </div>
+
+          <p class="hero-index" aria-hidden="true">01—01</p>
+        </section>
+
+        <section class="intro-line reveal" aria-label="Présentation de la collection">
+          <p>La première énergie<br />prend forme.</p>
+          <span>Scroll to explore</span>
+        </section>
+
+        <section class="product-section" id="shop" aria-labelledby="product-title">
+          <div class="product-heading reveal">
+            <p class="eyebrow">Premier drop</p>
+            <h2 id="product-title">ATOME<br /><span>— SET 001</span></h2>
+          </div>
+
+          <div class="product-visual reveal" data-product-visual tabindex="0" role="button" aria-label="Voir l'ensemble Atome porté">
+            <img class="product-image product-flat" src="./vetement%20realiste%20sans%20humain.png" alt="L'ensemble Atome, avec hoodie et pantalon, présenté à plat" />
+            <img class="product-image product-worn" src="./vetement%20humain%20hiver.png" alt="L'ensemble Atome porté, vu de face et de dos" />
+            <div class="product-hover-note" aria-hidden="true"><span class="hover-dot"></span><span class="note-default">Porté par Atome</span><span class="note-active">Set 001</span></div>
+          </div>
+
+          <div class="product-info reveal">
+            <div class="product-meta">
+              <p>Hoodie zippé + pantalon</p>
+              <p>Prix à venir</p>
+            </div>
+            <p class="product-description">Un ensemble noir et blanc pensé pour bouger avec votre énergie.</p>
+            <a class="solid-link" href="#contact">Découvrir <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+
+        <section class="manifesto" id="about" aria-labelledby="about-title">
+          <div class="manifesto-mark reveal">
+            <img src="./Atome%20Logo.jpeg" alt="Logo Atome" />
+          </div>
+          <div class="manifesto-copy reveal reveal-delay">
+            <p class="eyebrow">Notre trajectoire</p>
+            <h2 id="about-title">ATOME, C’EST<br />UN MOUVEMENT<br /><em>EN CONSTRUCTION.</em></h2>
+            <p class="manifesto-text">Créée par deux jeunes passionnés, Atome imagine des vêtements et rassemble une communauté qui avance dans la même direction.</p>
+            <a class="text-link link-arrow" href="#contact">Nous rencontrer <span aria-hidden="true">↘</span></a>
+          </div>
+        </section>
+
+        <section class="contact-strip" id="contact" aria-labelledby="contact-title">
+          <p class="eyebrow reveal">Rester dans le cercle</p>
+          <a class="contact-mail reveal" id="contact-title" href="mailto:contact@atome-wear.com">contact@atome-wear.com <span aria-hidden="true">↗</span></a>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-top">
+          <a class="wordmark footer-wordmark" href="#top">ATOME</a>
+          <p>© <span id="year"></span> ATOME</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Instagram <span aria-hidden="true">↗</span></a>
+          <a href="#">Discord <span aria-hidden="true">↗</span></a>
+          <a href="mailto:contact@atome-wear.com">Contact <span aria-hidden="true">↗</span></a>
+          <a href="#">Mentions légales</a>
+        </div>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "atome-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page for Atome",
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --bind 0.0.0.0",
+    "start": "python3 -m http.server 4173 --bind 0.0.0.0"
+  }
+}
