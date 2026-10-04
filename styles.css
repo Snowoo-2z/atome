@@ -203,8 +203,11 @@ img { display: block; max-width: 100%; }
   justify-content: space-between;
   align-items: end;
 }
-.intro-line p { margin: 0; font-size: clamp(1.2rem, 1.8vw, 1.8rem); font-weight: 500; letter-spacing: -0.065em; line-height: 1.02; }
-.intro-line span { color: var(--muted); font-family: var(--mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.discord-callout { margin: 0; font-size: clamp(1.2rem, 1.8vw, 1.8rem); font-weight: 500; letter-spacing: -0.065em; line-height: 1.02; border-bottom: 1px solid transparent; transition: border-color 220ms ease; }
+.discord-callout:hover { border-color: currentColor; }
+.discord-callout span { display: inline-block; font-size: 0.78em; transition: transform 220ms ease; }
+.discord-callout:hover span { transform: translate(2px, -2px); }
+.intro-line > span { color: var(--muted); font-family: var(--mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; }
 
 .product-section {
   padding: clamp(5rem, 10vw, 10.5rem) 3.5vw clamp(5rem, 9vw, 9rem);
@@ -223,7 +226,7 @@ img { display: block; max-width: 100%; }
   background: #d9a976;
   overflow: hidden;
   position: relative;
-  cursor: crosshair;
+  cursor: default;
   outline: none;
 }
 
@@ -345,14 +348,13 @@ img { display: block; max-width: 100%; }
   .hero-index { display: none; }
 
   .intro-line { padding: 1.1rem 1.2rem 1.25rem; }
-  .intro-line span { display: none; }
+  .intro-line > span { display: none; }
 
   .product-section { padding: 4.8rem 1.2rem 5.4rem; display: block; }
   .product-heading { margin-bottom: 2.3rem; }
   .product-heading h2 { font-size: clamp(3.2rem, 14.2vw, 4.4rem); }
   .product-info { max-width: none; margin-top: 1rem; }
   .product-description { margin: 1.25rem 0 1.7rem; max-width: 21rem; }
-  .product-visual { cursor: pointer; }
   .product-hover-note { bottom: 0.85rem; left: 0.85rem; }
 
   .manifesto { display: flex; flex-direction: column; min-height: auto; }
