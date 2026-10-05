@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
 
 :root {
   --paper: #f4f3ef;
@@ -6,6 +6,7 @@
   --muted: #777670;
   --line: rgba(17, 17, 15, 0.18);
   --night: #11110f;
+  --hero-serif: 'Playfair Display', Georgia, serif;
   --sans: 'Manrope', Arial, sans-serif;
   --mono: 'DM Mono', 'Courier New', monospace;
 }
@@ -156,7 +157,7 @@ img { display: block; max-width: 100%; }
 .hero-copy.in-view .hero-line { animation: hero-line-in 760ms cubic-bezier(.22,.61,.36,1) forwards; }
 .hero-copy.in-view .hero-line:nth-child(2) { animation-delay: 110ms; }
 .hero-copy.in-view .hero-line:nth-child(3) { animation-delay: 220ms; }
-.hero h1 em { font-family: var(--sans); font-style: normal; font-weight: 700; letter-spacing: -0.09em; }
+.hero h1 em { font-family: var(--hero-serif); font-style: italic; font-weight: 500; letter-spacing: -0.08em; }
 
 @keyframes hero-line-in {
   from { opacity: 0; transform: translateY(0.7em); }
