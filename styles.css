@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
   --paper: #f4f3ef;
@@ -6,7 +6,6 @@
   --muted: #777670;
   --line: rgba(17, 17, 15, 0.18);
   --night: #11110f;
-  --serif: 'Playfair Display', Georgia, serif;
   --sans: 'Manrope', Arial, sans-serif;
   --mono: 'DM Mono', 'Courier New', monospace;
 }
@@ -157,7 +156,7 @@ img { display: block; max-width: 100%; }
 .hero-copy.in-view .hero-line { animation: hero-line-in 760ms cubic-bezier(.22,.61,.36,1) forwards; }
 .hero-copy.in-view .hero-line:nth-child(2) { animation-delay: 110ms; }
 .hero-copy.in-view .hero-line:nth-child(3) { animation-delay: 220ms; }
-.hero h1 em { font-family: var(--serif); font-weight: 500; letter-spacing: -0.08em; }
+.hero h1 em { font-family: var(--sans); font-style: normal; font-weight: 700; letter-spacing: -0.09em; }
 
 @keyframes hero-line-in {
   from { opacity: 0; transform: translateY(0.7em); }
@@ -213,7 +212,7 @@ img { display: block; max-width: 100%; }
 .intro-line > span { color: var(--muted); font-family: var(--mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; }
 
 .product-section {
-  padding: clamp(5rem, 10vw, 10.5rem) 3.5vw clamp(5rem, 9vw, 9rem);
+  padding: clamp(3.75rem, 6.5vw, 7.5rem) 3.5vw clamp(4rem, 6.5vw, 7rem);
   display: grid;
   grid-template-columns: minmax(170px, 0.4fr) minmax(360px, 1fr) minmax(190px, 0.4fr);
   align-items: start;
@@ -222,7 +221,7 @@ img { display: block; max-width: 100%; }
 
 .product-heading { padding-top: 0.2rem; }
 .product-heading h2 { margin-top: 1.25rem; font-size: clamp(2.45rem, 3.8vw, 4.45rem); }
-.product-heading h2 span { font-family: var(--serif); font-style: italic; font-weight: 500; }
+.product-heading h2 span { font-family: var(--sans); font-style: normal; font-weight: 600; letter-spacing: -0.1em; }
 
 .product-visual {
   aspect-ratio: 1 / 1;
@@ -313,15 +312,15 @@ img { display: block; max-width: 100%; }
   letter-spacing: -0.09em;
   line-height: 0.79;
 }
-.bonnet-copy h2 span { font-family: var(--serif); font-style: italic; font-weight: 500; }
+.bonnet-copy h2 span { font-family: var(--sans); font-style: normal; font-weight: 600; letter-spacing: -0.1em; }
 
-.contact-strip { padding: clamp(5rem, 12vw, 12rem) 3.5vw; display: flex; flex-direction: column; gap: 1.15rem; }
+.contact-strip { padding: clamp(4rem, 7.5vw, 7.5rem) 3.5vw; display: flex; flex-direction: column; gap: 1.15rem; }
 .contact-mail { max-width: 100%; width: fit-content; font-size: clamp(1.8rem, 4.2vw, 5rem); font-weight: 700; letter-spacing: -0.085em; line-height: 0.96; border-bottom: 3px solid var(--ink); transition: letter-spacing 300ms ease; }
 .contact-mail:hover { letter-spacing: -0.06em; }
 .contact-mail span { font-size: 0.65em; vertical-align: 0.15em; }
 
 .site-footer { background: var(--night); color: var(--paper); padding: 2.1rem 3.5vw 1.65rem; }
-.footer-top { display: flex; align-items: end; justify-content: space-between; padding-bottom: 5rem; }
+.footer-top { display: flex; align-items: end; justify-content: space-between; padding-bottom: 3.5rem; }
 .footer-wordmark { font-size: clamp(3rem, 7.2vw, 8rem); letter-spacing: -0.12em; }
 .footer-top p { margin: 0; color: rgba(244,243,239,0.56); font-family: var(--mono); font-size: 0.61rem; }
 .footer-links { border-top: 1px solid rgba(244,243,239,0.3); padding-top: 0.95rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
@@ -352,7 +351,7 @@ img { display: block; max-width: 100%; }
   .intro-line { padding: 1.1rem 1.2rem 1.25rem; }
   .intro-line > span { display: none; }
 
-  .product-section { padding: 4.8rem 1.2rem 5.4rem; display: block; }
+  .product-section { padding: 4rem 1.2rem 4.5rem; display: block; }
   .product-section > .product-visual { margin: 0 auto; }
   .product-heading { margin-bottom: 2.3rem; }
   .product-heading h2 { font-size: clamp(2.6rem, 12vw, 3.7rem); }
@@ -363,7 +362,7 @@ img { display: block; max-width: 100%; }
   .bonnet-copy { min-height: 320px; padding: 3rem 1.2rem; }
   .bonnet-copy h2 { font-size: clamp(2.65rem, 11vw, 3.55rem); }
 
-  .contact-strip { padding: 5.3rem 1.2rem; }
+  .contact-strip { padding: 4rem 1.2rem; }
   .contact-mail { font-size: clamp(1.55rem, 7.2vw, 2.5rem); border-bottom-width: 2px; }
   .site-footer { padding: 1.5rem 1.2rem 1.25rem; }
   .footer-top { padding-bottom: 3.6rem; align-items: start; flex-direction: column; gap: 1.5rem; }
